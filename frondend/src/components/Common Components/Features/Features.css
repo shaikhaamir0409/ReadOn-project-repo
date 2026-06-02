@@ -1,0 +1,122 @@
+.features {
+  text-align: center;
+  padding: 4rem 8%;
+}
+
+/* Heading Styling */
+.features .heading {
+  font-size: 3.5rem;
+  color: var(--black);
+  padding: 2rem 0 3rem 0;
+  font-weight: bold;
+}
+
+.features .heading span {
+
+  display: inline-block;
+  padding: 0.7rem 3.5rem;
+  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0 100%, 7% 50%, 0 0);
+  font-weight: bold;
+}
+
+/* Card Container */
+.features .content .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+  justify-content: center;
+}
+
+/* Card Styling */
+.features .content .box-container .box {
+  text-align: center;
+  background: #fff;
+  padding: 3rem 2rem;
+  box-shadow: var(--box-shadow);
+  border-radius: 1rem;
+  outline: var(--outline);
+  outline-offset: -0.5rem;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.features .content .box-container .box:hover {
+  outline-offset: 0;
+  outline: var(--outline-hover);
+  transform: translateY(-5px);
+}
+
+/* Image Inside Card */
+.features .content .box-container .box img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+}
+
+/* Card Title */
+.features .content .box-container .box h3 {
+  font-size: 2.2rem;
+  line-height: 1.5;
+  color: var(--black);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Card Description */
+.features .content .box-container .box p {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: var(--light-color);
+  padding: 1rem 0;
+  text-align: center;
+  max-width: 90%;
+}
+
+/* Button Inside Card */
+.features .content .box-container .box a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  background: var(--black);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.features .content .box-container .box a:hover {
+  background: var(--white);
+  color: var(--black);
+  border: 0.2rem solid var(--black);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .features .content .box-container {
+    grid-template-columns: 1fr;
+  }
+
+  .features .heading {
+    font-size: 2.8rem;
+  }
+
+  .features .content .box-container .box {
+    padding: 2.5rem;
+  }
+
+  .features .content .box-container .box h3 {
+    font-size: 2rem;
+  }
+
+  .features .content .box-container .box p {
+    font-size: 1.3rem;
+  }
+}

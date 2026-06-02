@@ -1,0 +1,174 @@
+/* Products.css */
+
+.products {
+  padding: 3rem 9%;
+}
+
+.products .heading {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.products .heading span {
+  color: #fff;
+}
+
+.products .products-slider {
+  padding: 1rem;
+}
+
+.products .products-slider .box {
+  background: #fff;
+  border-radius: .5rem;
+  text-align: center;
+  padding: 3rem 2rem;
+  outline-offset: -1rem;
+  outline: .1rem solid rgba(0,0,0,.1);
+  box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+  transition: .2s linear;
+}
+
+.products .products-slider .box:hover {
+  outline-offset: 0;
+  outline: .2rem solid #ff7800;
+}
+
+/* Fixed Image Styles */
+.products .products-slider .box img {
+  width: 100%;          /* Image takes full width */
+  max-width: 250px;     /* Prevents images from getting too large */
+  height: 180px;        /* Uniform height */
+  object-fit: contain;  /* Ensures the image is fully visible */
+  margin: auto;         /* Centers image */
+  display: block;
+}
+
+/* Title */
+.products .products-slider .box h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+/* Price */
+.products .products-slider .box .price {
+  font-size: 2rem;
+  color: #ff7800;
+  padding: .5rem 0;
+}
+
+/* Stars */
+.products .products-slider .box .stars {
+  padding: .5rem 0;
+  font-size: 1.7rem;
+}
+
+.products .products-slider .box .stars .fa-star,
+.products .products-slider .box .stars .fa-star-half-alt {
+  color: #ffb800;
+}
+
+.products .products-slider .swiper-button-next,
+.products .products-slider .swiper-button-prev {
+  color: #ff7800;
+}
+
+/* Add Product Form Styles */
+.add-product-form {
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: .5rem;
+  box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+.add-product-form input,
+.add-product-form select {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: #333;
+  margin: 1rem 0;
+  border: 1px solid #ddd;
+  border-radius: .5rem;
+}
+
+.add-product-form input:focus,
+.add-product-form select:focus {
+  border-color: #ff7800;
+  outline: none;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: .8rem 3rem;
+  font-size: 1.7rem;
+  border-radius: .5rem;
+  border: .2rem solid #130f40;
+  color: #130f40;
+  cursor: pointer;
+  background: none;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background: #ff7800;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .products {
+      padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .products .heading {
+      font-size: 3rem;
+  }
+  
+  .add-product-form {
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .products .heading {
+      font-size: 2.5rem;
+  }
+}
+
+/* Product Actions (Edit & Delete) */
+.product-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.edit-btn,
+.delete-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  transition: color 0.2s;
+}
+
+.edit-btn {
+  color: #4CAF50;
+}
+
+.delete-btn {
+  color: #f44336;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+  opacity: 0.7;
+}

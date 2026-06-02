@@ -1,0 +1,119 @@
+.blogs {
+    text-align: center;
+    padding: 3rem 8%;
+  }
+  
+  /* Heading */
+  .heading {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Blog Form */
+  .blog-form,
+  .edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+  }
+  
+  .blog-form input,
+  .edit-form input,
+  .blog-form textarea,
+  .edit-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Blog Container - Enable Horizontal Scrolling */
+  .blogs-container {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Smooth scrolling effect */
+    padding-bottom: 1rem;
+  }
+  
+  /* Hide scrollbar for WebKit browsers */
+  .blogs-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Blog Card */
+  .blog-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px; /* Fixed width for horizontal scrolling */
+    flex: 0 0 auto; /* Prevent shrinking */
+    scroll-snap-align: start; /* Smooth snapping effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Blog Image */
+  .blog-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Blog Content */
+  .blog-content {
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .blog-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .blog-content p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+  }
+  
+  /* Admin Buttons */
+  .admin-actions {
+    margin-top: 1rem;
+  }
+  
+  .edit-btn, .delete-btn {
+    margin: 5px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-btn { background: #007bff; color: white; }
+  .delete-btn { background: #dc3545; color: white; }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .blogs-container {
+      gap: 1rem; /* Reduce gap on smaller screens */
+    }
+  
+    .blog-card {
+      width: 280px; /* Adjust card width for smaller screens */
+    }
+  
+    .heading {
+      font-size: 2.8rem;
+    }
+  }
+  

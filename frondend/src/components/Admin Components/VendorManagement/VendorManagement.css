@@ -1,0 +1,70 @@
+/* src/components/VendorManagement.css */
+
+.management-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .management-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .management-form input,
+  .management-form button {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  .management-form button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .management-form button:hover {
+    background-color: #218838;
+  }
+  
+  .management-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .management-table th,
+  .management-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .management-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .item-actions button {
+    margin-right: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #28a745;
+  }
+  
+  .item-actions button:hover {
+    color: #218838;
+  }
+  

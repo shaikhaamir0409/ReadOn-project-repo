@@ -1,0 +1,87 @@
+.order-status .heading {
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.order-status .order-table {
+  width: 100%;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+.order-status .order-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background: #f9f9f9;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+}
+
+.order-status .order-table th,
+.order-status .order-table td {
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-status .order-table th {
+  background: var(--light-color);
+  color: var(--white);
+}
+
+.order-status .order-table img {
+  width: 100px;
+  height: 100px;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.order-status .order-table tr:hover {
+  background: #f9f9f9;
+}
+
+.order-status .order-table td:last-child {
+  color: var(--orange);
+  font-weight: bold;
+}
+
+.invoice {
+  padding: 20px;
+  border: 2px solid #333;
+  width: 400px;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.invoice-header {
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.invoice h2,
+.invoice h3 {
+  margin: 5px 0;
+  color: #333;
+}
+
+.invoice p {
+  margin: 5px 0;
+}
+
+.invoice ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.invoice ul li {
+  margin: 5px 0;
+}
+
+.invoice h3 {
+  font-size: 18px;
+}

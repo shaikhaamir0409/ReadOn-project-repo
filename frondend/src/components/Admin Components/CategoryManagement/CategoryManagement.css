@@ -1,0 +1,155 @@
+/* Main Container */
+.category-management {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 25px;
+  padding: 15px 0;
+  background: linear-gradient(to right, #ffffff, #ffffff);
+  color: black;
+  border-radius: 8px;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Forms Styling */
+.category-form,
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+.category-form input,
+.edit-form input {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+/* Button Styles */
+.category-form button,
+.edit-form button {
+  padding: 12px;
+  font-size: 1.1rem;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.category-form button:hover,
+.edit-form button:hover {
+  background-color: #218838;
+}
+
+/* Category List */
+.category-list {
+  margin-top: 25px;
+}
+
+/* Table Styling */
+.category-table {
+  width: 100%;
+  margin-top: 25px;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-table th,
+.category-table td {
+  border: 1px solid #ddd;
+  padding: 14px;
+  text-align: left;
+}
+
+.category-table th {
+  background: #28a745;
+  color: black;
+  font-size: 1.2rem;
+}
+
+/* Alternating Row Colors */
+.category-table tr:nth-child(even) {
+  background-color: #fff;
+}
+
+/* Edit & Delete Buttons */
+.edit-btn,
+.delete-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 0 8px;
+  transition: 0.3s;
+}
+
+.edit-btn {
+  color: #007bff;
+}
+
+.delete-btn {
+  color: #dc3545;
+}
+
+.edit-btn:hover {
+  color: #0056b3;
+  transform: scale(1.1);
+}
+
+.delete-btn:hover {
+  color: #c82333;
+  transform: scale(1.1);
+}
+
+/* Image Styling */
+.category-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .category-management {
+    width: 95%;
+  }
+
+  .category-form,
+  .edit-form {
+    padding: 15px;
+  }
+
+  .category-table th,
+  .category-table td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
