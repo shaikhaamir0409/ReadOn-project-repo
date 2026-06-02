@@ -91,5 +91,5 @@ npm run dev
 
 ## Author
 
-Aamir Shaikh
+Aamir Shaikh, Aksh Suthar, Saroj Prashant
 Full Stack Developer
